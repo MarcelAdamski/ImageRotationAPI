@@ -22,7 +22,7 @@ Created with:
 ## How to run
 There are several options to run this script. I will briefly describe two of them from most to least recommended.
 
-## Docker using docker image
+### Docker using docker image
 In this step Docker is required. Download [docker](https://www.docker.com/products/docker-desktop).
 1. Download zip file.
 2. Change directory in command line to folder with ```Dockerfile``` and type ```docker build -t image-rotation-api .```
@@ -30,7 +30,7 @@ Name docker image however you want (in this case ```image-rotation-api```), but 
 4. Check if docker image has properly mounted. To do this type in cmd ```docker-images```.
 5. Run script and local server with ```docker run -p 5000:5000 image-rotation-api```. Make sure that port ```5000``` is free.
 
-## By running ```server.py``` python file.
+### By running ```server.py``` python file.
 1. Python interpreter is required for this step. Download [python](https://www.python.org/downloads/windows/).
 2. Change directory in command line to folder with ```requirements.txt``` and install required libraries and packages by typing ```pip install -r requirements.txt```.
 3. Change directory to ```app``` and run service by typing typing ```python server.py```.
@@ -38,7 +38,17 @@ Name docker image however you want (in this case ```image-rotation-api```), but 
 ## How to use
 You can POST PNG image for example by ```curl``` or [postman][https://www.postman.com/]
 
-### this is
+### Curl
+1. Change directory in command line where you have PNG file.
+2. Example use of curl:
+```
+curl -
+```
+
+### POSTMAN
+1. In Postman choose POST method and in url type: ```http://localhost:5000/rotate```
+2. In the body tab in the field Key type ```image```, and in the same field change format from "Text" to "File"
+3. As value choose your PNG file and click Send. 
 
 ## Additional info
 The author tested several solutions. In the case of images with low resolution, the differences in script execution time are negligible. However, provided solution is faster for larger images with lots of white pixels compared to
