@@ -1,6 +1,8 @@
 # Image Rotation API 
 Simple script that rotate image when found solid line which is sequention of three white and three red pixels horizontally or vertically in your PNG image.
 
+## How it works?
+Rotation......
 * White pixel (HEX) - #ffffff
 * Red pixel (HEX) - #ff0000
 
