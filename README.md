@@ -4,7 +4,7 @@ Simple script that rotate image when found solid line which is sequention of thr
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [How to run](#how-to-run)
+* [Run instructions](#run-instructions)
 * [How to use](#how-to-use)
 * [Additional info](#additional-info)
 
@@ -19,7 +19,7 @@ Created with:
 * Flask
 * Docker
 
-## How to run
+## Run instructions
 There are several options to run this script. I will briefly describe two of them from most to least recommended.
 
 ### Docker using docker image
