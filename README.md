@@ -38,7 +38,7 @@ Name docker image however you want (in this case ```image-rotation-api```), but 
 ## How to use
 You can POST png image for example by ```curl``` or [postman](https://www.postman.com/)
 
-### Curl
+### CURL
 1. Change directory in command line where you have PNG image.
 2. Example use of curl:
 ```
