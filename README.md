@@ -44,7 +44,7 @@ You can POST png image for example by ```curl``` or [postman](https://www.postma
 ```
 curl -v -F "image=@yourimage.png" http://localhost:5000/rotate -o rotated.png
 ```
-where ```yourimage.png``` is your png file and ```rotated.png``` is output file.
+where ```yourimage.png``` is your png file and ```rotated.png``` is name of output file.
 
 ### POSTMAN
 1. In Postman choose POST method and in url type: ```http://localhost:5000/rotate```
