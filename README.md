@@ -52,7 +52,7 @@ where ```yourimage.png``` is your png file and ```rotated.png``` is output file.
 3. As value choose your PNG image and click Send. 
 
 ## Additional info
-The author tested several solutions. In the case of images with low resolution, the differences in script execution time are negligible. However, provided solution is faster for larger images with lots of white pixels compared to solutions with pixel-by-pixel comparison.
+The author has tested several solutions. In the case of images with low resolution, the differences in script execution time are negligible. However, provided solution is faster for larger images with lots of white pixels compared to solutions with pixel-by-pixel comparison.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
