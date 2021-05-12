@@ -6,7 +6,7 @@ Simple script that rotate image when found solid line which is sequention of thr
 * [Technologies](#technologies)
 * [How to run](#how-to-run)
 * [How to use](#how-to-use)
-* [Output example](#output-example)
+* [Additional info](#additional-info)
 
 ## General info
 Rotation......
@@ -26,7 +26,7 @@ There are several options to run this script. I will briefly describe two of the
 In this step Docker is required. Download [docker](https://www.docker.com/products/docker-desktop).
 1. Download zip file.
 2. Change directory in command line to folder with ```Dockerfile``` and type ```docker build -t image-rotation-api .```
-Name of docker image however you want (in this case ```image-rotation-api```, but you will have to respect it in next step.
+Name docker image however you want (in this case ```image-rotation-api```), but you will have to respect it in next step.
 4. Check if docker image has properly mounted. To do this type in cmd ```docker-images```.
 5. Run script and local server with ```docker run -p 5000:5000 image-rotation-api```. Make sure that port ```5000``` is free.
 
@@ -34,6 +34,11 @@ Name of docker image however you want (in this case ```image-rotation-api```, bu
 1. Python interpreter is required for this step. Download [python](https://www.python.org/downloads/windows/).
 2. Change directory in command line to folder with ```requirements.txt``` and install required libraries and packages by typing ```pip install -r requirements.txt```.
 3. Change directory to ```app``` and run service by typing typing ```python server.py```.
+
+## How to use
+You can POST PNG image for example by ```curl``` or [postman][https://www.postman.com/]
+
+### this is
 
 ## Additional info
 The author tested several solutions. In the case of images with low resolution, the differences in script execution time are negligible. However, provided solution is faster for larger images with lots of white pixels compared to
