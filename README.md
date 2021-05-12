@@ -9,12 +9,10 @@ Simple script that rotate image when found solid line which is sequention of thr
 * [Additional info](#additional-info)
 
 ## General info
-This script is a service with ```/rotate``` endpoint which is a POST request that accepts only png images.
-Service is checking whether there is a solid line of three white pixels (#ffffff) and three red pixels (#ff0000). It analyze situations where the line is placed horizontally or vertically. After detecting such a line, the application should rotate the image so that the line is placed vertically, with white pixels
-up. In case the source image contains a vertical line with white pixels on the bottom, image will be rotated image by
-180 degrees. After successful graphic operation, the image is saved again in PNG format and returned in response to the above-mentioned POST request with ```200``` status code (OK).
-If the source image contains more than one solid line and they are contradict, script will return ```400``` status code (Bad request).
-If the line does not appear in the picture, script automatically will return an empty answer with ```204``` status code (No content).
+This script is a service with ```/rotate``` endpoint which is a POST request that accepts only png images. Service is checking whether there is a solid line of three white pixels (#ffffff) and three red pixels (#ff0000). It analyze situations where the line is placed horizontally or vertically. After detecting such a line, the application should rotate the image so that the line is placed vertically, with white pixels up. In case the source image contains a vertical line with white pixels on the bottom, image will be rotated image by 180 degrees. 
+* After successful graphic operation, the image is saved again in PNG format and returned in response to the above-mentioned POST request with ```200``` status code (OK).
+* If the source image contains more than one solid line and they are contradict, script will return ```400``` status code (Bad request).
+* In the situation where the line does not appear in the picture, script automatically will return an empty answer with ```204``` status code (No content).
 ## Technologies
 Created with:
 * Python 
