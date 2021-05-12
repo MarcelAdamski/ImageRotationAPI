@@ -20,7 +20,12 @@ Created with:
 * Docker
 
 ## How to run
-There are several options to run this script. I will briefly describe each of them from most to least recommended.
+There are several options to run this script. I will briefly describe two of them from most to least recommended.
+
+# Docker using docker image
+In this step Docker is required. Download [docker](https://www.docker.com/products/docker-desktop)
+1. Download zip file.
+2. In command line type ```docker build -t image-rotation-api .```
 
 ## Additional info
 The author tested several solutions. In the case of images with low resolution, the differences in script execution time are negligible. However, provided solution is faster for larger images with lots of white pixels compared to
