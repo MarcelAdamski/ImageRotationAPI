@@ -1,8 +1,8 @@
 # Image Rotation API 
 Simple script that rotate image when found solid line which is sequention of three white and three red pixels horizontally or vertically in your PNG image.
 
-White pixel (HEX) - #ffffff
-Red pixel (HEX) - #ff0000
+* White pixel (HEX) - #ffffff
+* Red pixel (HEX) - #ff0000
 
 ## Run instructions
 There are several options to run this script. I will briefly describe each of them from most to least recommended.
@@ -26,7 +26,7 @@ Instrukcja uruchomienia usługi:
 2.1 Poprzez dowolne IDE (wrzucić plik server.py)
 
 2.2 Poprzez aplikacje Docker.
-Wymagany zainstalowany Docker:
+Wymagany zainstalowany Docker:Cancel changes
 https://www.docker.com/products/docker-desktop
 
 W lini komend przejsc do folderu:
