@@ -33,17 +33,18 @@ Name docker image however you want (in this case ```image-rotation-api```), but 
 ### By running ```server.py``` python file.
 1. Python interpreter is required for this step. Download [python](https://www.python.org/downloads/windows/).
 2. Change directory in command line to folder with ```requirements.txt``` and install required libraries and packages by typing ```pip install -r requirements.txt```.
-3. Change directory to ```app``` and run service by typing typing ```python server.py```.
+3. Change directory to ```app``` and run service by typing ```python server.py```.
 
 ## How to use
-You can POST PNG image for example by ```curl``` or [postman][https://www.postman.com/]
+You can POST png image for example by ```curl``` or [postman](https://www.postman.com/)
 
 ### Curl
 1. Change directory in command line where you have PNG file.
 2. Example use of curl:
 ```
-curl -
+curl -v -F "image=@yourimage.png" http://localhost:5000/rotate -o rotated.png
 ```
+where ```yourimage.png``` is your png file.
 
 ### POSTMAN
 1. In Postman choose POST method and in url type: ```http://localhost:5000/rotate```
