@@ -1,12 +1,25 @@
 # Image Rotation API 
 Simple script that rotate image when found solid line which is sequention of three white and three red pixels horizontally or vertically in your PNG image.
 
-## How it works?
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [How to run](#how-to-run)
+* [How to use](#how-to-use)
+* [Output example](#output-example)
+
+## General info
 Rotation......
 * White pixel (HEX) - #ffffff
 * Red pixel (HEX) - #ff0000
 
-## Run instructions
+## Technologies
+Created with:
+* Python 
+* Flask
+* Docker
+
+## How to run
 There are several options to run this script. I will briefly describe each of them from most to least recommended.
 
 ## Additional info
