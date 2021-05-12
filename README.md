@@ -23,9 +23,16 @@ Created with:
 There are several options to run this script. I will briefly describe two of them from most to least recommended.
 
 # Docker using docker image
-In this step Docker is required. Download [docker](https://www.docker.com/products/docker-desktop)
+In this step Docker is required. Download [docker](https://www.docker.com/products/docker-desktop).
 1. Download zip file.
-2. In command line type ```docker build -t image-rotation-api .```
+2. Change directory in command line to folder with ```Dockerfile``` and type ```docker build -t image-rotation-api .```. Name of docker image however you want (in this case ```image-rotation-api```, but you will have to respect it in next step.
+3. Check if docker image has properly mounted. To do this type in cmd ```docker-images```.
+4. Run script and local server with ```docker run -p 5000:5000 image-rotation-api```. Make sure that port ```5000``` is free.
+
+# By running ```server.py``` python file.
+1. Python interpreter is required for this step. Download [python](https://www.python.org/downloads/windows/).
+2. Change directory in command line to folder with ```requirements.txt``` and install required libraries and packages by typing ```pip install -r requirements.txt```.
+3. Change directory to ```app``` and run service by typing typing ```python server.py```.
 
 ## Additional info
 The author tested several solutions. In the case of images with low resolution, the differences in script execution time are negligible. However, provided solution is faster for larger images with lots of white pixels compared to
